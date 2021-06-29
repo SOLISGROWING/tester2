@@ -31,21 +31,14 @@
     font-size:15px;
     line-height:1.8em;
 }
-#first{
-    margin:0 25px 0 33px;
-    flex:1; display: inline-block;
-    width:20px;
-    height: 20px;
-}
-#second{
-    margin:0 0 0 63px;
-    padding:0 0 0 40px;
-    margin-left: 30px;
-    flex:1;
-    display: inline-block;
-    width:20px;
-    height: 20px;
-}
+.accpet input[type="radio"] {flex:1; display: inline-block; width:20px; height: 20px;}
+.accpet > input {margin:0 15px 0 30px;}
+.accpet #second {margin:0 0px 0 335px;}
+.accpet #third {margin:0 0px 0 40px;}
+.accpet #fourth {margin:0 0px 0 320px;}
+
+
+
 .feeling {display: flex; padding: 0px 5px;}
 .feeling > div {flex:1;}
 .feeling img {border:black 2px; width:50px; height:50px;}
@@ -209,11 +202,12 @@ function copy_to_clipboard() {
                     <h2>전신</h2>
                     <h3> 수용감</h3>
                     <img src='수용감사진.PNG' class="range1"><br>
-                    <input type="radio" name="beds" value="1" id="first" />
-                    <input type="radio" name="beds" value="2" id="second" />
-                    <input type="radio" name="beds" value="3" id="third" /><label for="third"></label>
-                    <input type="radio" name="beds" value="4" id="fourth" /><label for="fourth"></label>
-
+                    <div class="accpet">
+                    <input type="radio" name="entry.537308640" value="-1" id="first" />
+                    <input type="radio" name="entry.537308640" value="0" id="second" />
+                    <input type="radio" name="entry.537308640" value="-999" id="third" /><label for="third"></label>
+                    <input type="radio" name="entry.537308640" value="1" id="fourth" /><label for="fourth"></label>
+                    </div>
 
 
 
@@ -223,7 +217,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                         <input type="radio" name="entry.427587242" value="-4">
                         <input type="radio" name="entry.427587242" value="-3.5">
@@ -286,7 +280,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1745452093"  value="-4">
                     <input type="radio" name="entry.1745452093"  value="-3.5">
@@ -349,7 +343,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.438300067"  value="-4">
                     <input type="radio" name="entry.438300067"value="-3.5">
@@ -413,7 +407,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.2067194643"  value="-4">
                     <input type="radio" name="entry.2067194643"value="-3.5">
@@ -469,70 +463,6 @@ function copy_to_clipboard() {
                     </div>
                     <br>
                     <br>
-                    <h2>등</h2>
-                    <h3> 한서감</h3>
-                    <div class="feeling">
-                        <div class="left"><img src='매우춥다.jpg'></div>
-                        <div class="middle"><img src='보통이다.jpg'></div>
-                        <div class="right"><img src='매우덥다.jpg'></div>
-                    </div>
-                    <img src='range1.jpg' class="range1"><br>
-                    <div class="rangechild">
-                    <input type="radio" name="entry.568931827"  value="-4">
-                    <input type="radio" name="entry.568931827"value="-3.5">
-                    <input type="radio" name="entry.568931827" value="-3">
-                    <input type="radio" name="entry.568931827" value="-2.5">
-                    <input type="radio" name="entry.568931827" value="-2">
-                    <input type="radio" name="entry.568931827" value="-1.5">
-                    <input type="radio" name="entry.568931827" value="-1">
-                    <input type="radio" name="entry.568931827" value="-0.5">
-                    <input type="radio" name="entry.568931827" value="0">
-                    <input type="radio" name="entry.568931827" value="0.5">
-                    <input type="radio" name="entry.568931827" value="1">
-                    <input type="radio" name="entry.568931827" value="1.5">
-                    <input type="radio" name="entry.568931827" value="2">
-                    <input type="radio" name="entry.568931827" value="2.5">
-                    <input type="radio" name="entry.568931827" value="3">
-                    <input type="radio" name="entry.568931827" value="3.5">
-                    <input type="radio" name="entry.568931827" value="4">
-                    </div>
-                    <br>
-                    <br>
-
-                    <h3> 쾌적감</h3>
-                    <div class="feeling">
-                        <div class="left"><img src='매우불쾌.jpg'></div>
-                        <div class="right"><img src='매우쾌적.jpg'></div>
-                    </div>
-
-                    <img src='rangecool.jpg' class="range1"><br>
-                    <div class="coolchild">
-                        <div>
-                        <input type="radio" name="entry.1112193451"  value="-4">
-                        <input type="radio" name="entry.1112193451" value="-3.5">
-                        <input type="radio" name="entry.1112193451" value="-3">
-                        <input type="radio" name="entry.1112193451" value="-2.5">
-                        <input type="radio" name="entry.1112193451" value="-2">
-                        <input type="radio" name="entry.1112193451" value="-1.5">
-                        <input type="radio" name="entry.1112193451" value="-1">
-                        <input type="radio" name="entry.1112193451" value="-0.5">
-                        <input type="radio" name="entry.1112193451" value="999">
-                        </div>
-                        <div>
-                        <input type="radio" name="entry.1112193451" value="0">
-                        <input type="radio" name="entry.1112193451" value="0.5">
-                        <input type="radio" name="entry.1112193451" value="1">
-                        <input type="radio" name="entry.1112193451" value="1.5">
-                        <input type="radio" name="entry.1112193451" value="2">
-                        <input type="radio" name="entry.1112193451" value="2.5">
-                        <input type="radio" name="entry.1112193451" value="3">
-                        <input type="radio" name="entry.1112193451" value="3.5">
-                        <input type="radio" name="entry.1112193451" value="4">
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
                     <h2>오른상완</h2>
                     <h3> 한서감</h3>
                     <div class="feeling">
@@ -540,7 +470,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1421472170"  value="-4">
                     <input type="radio" name="entry.1421472170"value="-3.5">
@@ -603,7 +533,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.143389605"  value="-4">
                     <input type="radio" name="entry.143389605"value="-3.5">
@@ -666,7 +596,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1330701423"  value="-4">
                     <input type="radio" name="entry.1330701423"value="-3.5">
@@ -729,7 +659,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.901946686"  value="-4">
                     <input type="radio" name="entry.901946686"value="-3.5">
@@ -793,7 +723,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.5265974"  value="-4">
                     <input type="radio" name="entry.5265974"value="-3.5">
@@ -857,7 +787,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1722407174"  value="-4">
                     <input type="radio" name="entry.1722407174"value="-3.5">
@@ -921,7 +851,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1344452585"  value="-4">
                     <input type="radio" name="entry.1344452585"value="-3.5">
@@ -985,7 +915,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.452180006"  value="-4">
                     <input type="radio" name="entry.452180006"value="-3.5">
@@ -1049,7 +979,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1931033673"  value="-4">
                     <input type="radio" name="entry.1931033673"value="-3.5">
@@ -1113,7 +1043,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.85875342"  value="-4">
                     <input type="radio" name="entry.85875342"value="-3.5">
@@ -1177,7 +1107,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.911930907"  value="-4">
                     <input type="radio" name="entry.911930907"value="-3.5">
@@ -1241,7 +1171,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.925958453"  value="-4">
                     <input type="radio" name="entry.925958453"value="-3.5">
@@ -1305,7 +1235,7 @@ function copy_to_clipboard() {
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1745452093"  value="-4">
                     <input type="radio" name="entry.1745452093"  value="-3.5">
@@ -1361,77 +1291,15 @@ function copy_to_clipboard() {
                     </div>
                     <br>
                     <br>
-                    <h2>엉덩이</h2>
+
+                    <h2>엉덩이 및 허벅지뒤</h2>
                     <h3> 한서감</h3>
                     <div class="feeling">
                         <div class="left"><img src='매우춥다.jpg'></div>
                         <div class="middle"><img src='보통이다.jpg'></div>
                         <div class="right"><img src='매우덥다.jpg'></div>
                     </div>
-                    <img src='range1.jpg' class="range1"><br>
-                    <div class="rangechild">
-                    <input type="radio" name="entry.1745452093"  value="-4">
-                    <input type="radio" name="entry.1745452093"  value="-3.5">
-                    <input type="radio" name="entry.1745452093" value="-3">
-                    <input type="radio" name="entry.1745452093" value="-2.5">
-                    <input type="radio" name="entry.1745452093" value="-2">
-                    <input type="radio" name="entry.1745452093" value="-1.5">
-                    <input type="radio" name="entry.1745452093" value="-1">
-                    <input type="radio" name="entry.1745452093" value="-0.5">
-                    <input type="radio" name="entry.1745452093" value="0">
-                    <input type="radio" name="entry.1745452093" value="0.5">
-                    <input type="radio" name="entry.1745452093" value="1">
-                    <input type="radio" name="entry.1745452093" value="1.5">
-                    <input type="radio" name="entry.1745452093" value="2">
-                    <input type="radio" name="entry.1745452093" value="2.5">
-                    <input type="radio" name="entry.1745452093" value="3">
-                    <input type="radio" name="entry.1745452093" value="3.5">
-                    <input type="radio" name="entry.1745452093" value="4">
-                    </div>
-                    <br>
-                    <br>
-
-                    <h3> 쾌적감</h3>
-                    <div class="feeling">
-                        <div class="left"><img src='매우불쾌.jpg'></div>
-                        <div class="right"><img src='매우쾌적.jpg'></div>
-                    </div>
-
-                    <img src='rangecool.jpg' class="range1"><br>
-                    <div class="coolchild">
-                        <div>
-                        <input type="radio" name="entry.90775522"  value="-4">
-                        <input type="radio" name="entry.90775522" value="-3.5">
-                        <input type="radio" name="entry.90775522" value="-3">
-                        <input type="radio" name="entry.90775522" value="-2.5">
-                        <input type="radio" name="entry.90775522" value="-2">
-                        <input type="radio" name="entry.90775522" value="-1.5">
-                        <input type="radio" name="entry.90775522" value="-1">
-                        <input type="radio" name="entry.90775522" value="-0.5">
-                        <input type="radio" name="entry.90775522" value="999">
-                        </div>
-                        <div>
-                        <input type="radio" name="entry.90775522" value="0">
-                        <input type="radio" name="entry.90775522" value="0.5">
-                        <input type="radio" name="entry.90775522" value="1">
-                        <input type="radio" name="entry.90775522" value="1.5">
-                        <input type="radio" name="entry.90775522" value="2">
-                        <input type="radio" name="entry.90775522" value="2.5">
-                        <input type="radio" name="entry.90775522" value="3">
-                        <input type="radio" name="entry.90775522" value="3.5">
-                        <input type="radio" name="entry.90775522" value="4">
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <h2>허벅지뒤</h2>
-                    <h3> 한서감</h3>
-                    <div class="feeling">
-                        <div class="left"><img src='매우춥다.jpg'></div>
-                        <div class="middle"><img src='보통이다.jpg'></div>
-                        <div class="right"><img src='매우덥다.jpg'></div>
-                    </div>
-                    <img src='range1.jpg' class="range1"><br>
+                    <img src='range2.jpg' class="range1"><br>
                     <div class="rangechild">
                     <input type="radio" name="entry.1745452093"  value="-4">
                     <input type="radio" name="entry.1745452093"  value="-3.5">
